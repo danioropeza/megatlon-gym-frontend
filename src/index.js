@@ -3,11 +3,15 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import "semantic-ui-css/semantic.min.css";
 import App from './App';
+import Navigation from "./components/Navigation";
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
     <BrowserRouter>
-        <App />
+        <div>
+            <Navigation />
+            <App />
+        </div>
     </BrowserRouter>,
 document.getElementById('root'));
 
