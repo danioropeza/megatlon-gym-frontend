@@ -1,14 +1,15 @@
 import React from 'react'; 
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "semantic-ui-css/semantic.min.css";
 
 const Navigation = () => (
-    <div class="ui menu" >
-        <NavLink class="item" to="/" > Home </NavLink>
-        <NavLink class="item" to="/about" > About </NavLink>
-        <NavLink class="item" to="/contact" > Contact </NavLink>
-        <NavLink class="item" to="/schedule" > Schedule </NavLink>
-        <NavLink class="item" to="/address" > Address </NavLink>
+    <div className="ui menu" >
+        <Link className="item" to="/"> Home </Link>
+        <Link className="item" to="/login" > Login </Link>
+        <Link className="item" to="/register" > Register </Link>
+        <Link className="item" to="/plans" > Plans </Link>
+        <Link className="item" to="/schedule" > Schedule </Link>
+        <Link className="item" to="/about" > About </Link>
     </div>
 )
 
