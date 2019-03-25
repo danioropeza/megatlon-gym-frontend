@@ -9,10 +9,10 @@ class LoginPage extends React.Component {
     render() {
       return (
         <div className="ui container">
-            <h1>Login Page</h1>
+            <h1>Login</h1>
             <LoginForm submit={this.submit}/>
             <br />
-            <Link to="/register">Not created an account yet?</Link>
+            <Link to="/register">Todavia no estas registrado?</Link>
         </div>
       )
     }

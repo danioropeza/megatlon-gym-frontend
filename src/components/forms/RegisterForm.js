@@ -28,11 +28,11 @@ class RegisterForm extends React.Component{
         return(
             <Form onSubmit={this.onSubmit}>
                 <Form.Field>
-                    <label htmlFor="name">Name</label>
+                    <label htmlFor="name">Nombre</label>
                     <input  
                         id="name" 
                         name="name" 
-                        placeholder="Daniel Oropeza Soria" 
+                        placeholder="Jose Daniel Oropeza Soria" 
                         value={data.name}    
                         onChange={this.onChange}
                     />
@@ -48,7 +48,7 @@ class RegisterForm extends React.Component{
                     />
                 </Form.Field>  
                 <Form.Field>
-                    <label htmlFor="phoneNumber">Phone Number</label>
+                    <label htmlFor="phoneNumber">Telefono Celular</label>
                     <input  
                         id="phoneNumber" 
                         name="phoneNumber" 
@@ -58,28 +58,28 @@ class RegisterForm extends React.Component{
                     />
                 </Form.Field> 
                 <Form.Field>
-                    <label htmlFor="email">Email</label>
+                    <label htmlFor="email">Correo</label>
                     <input  
                         type="email" 
                         id="email" 
                         name="email" 
-                        placeholder="example@example.com" 
+                        placeholder="ejemplo@ejemplo.com" 
                         value={data.email}    
                         onChange={this.onChange}
                     />
                 </Form.Field> 
                 <Form.Field>
-                    <label htmlFor="password">Password</label>
+                    <label htmlFor="password">Contraseña</label>
                     <input  
                         type="password" 
                         id="password" 
                         name="password" 
-                        placeholder="Make it secure" 
+                        placeholder="Hazlo seguro" 
                         value={data.password}    
                         onChange={this.onChange}
                     />
                 </Form.Field> 
-                <Button primary>Register</Button>
+                <Button primary>Registrar</Button>
             </Form>
         );
     }

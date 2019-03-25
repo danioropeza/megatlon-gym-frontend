@@ -17,17 +17,17 @@ class PlansPage extends React.Component {
                             <Card.Header>Todas o nada</Card.Header>
                             <Card.Meta>Incluye todas las diciplinas</Card.Meta>
                             <Card.Description>
-                                <label class="ui header">Mes>TLD*</label> 
+                                <label className="ui header">Mes>TLD*</label> 
                                     295 bs / <label className="ui header">3VS*</label>
                                     190 bs<br />
-                                <label class="ui header">Semana></label>
+                                <label className="ui header">Semana></label>
                                     135 bs<br />
-                                <label class="ui header">Dia></label>
+                                <label className="ui header">Dia></label>
                                     45 bs<br />
                             </Card.Description>
                         </Card.Content>
                         <Card.Content extra>
-                        <a>
+                        <a href="">
                             <Icon name='check square' />
                             Consumo de agua libre, 2 meriendas gratis a la semana.
                         </a>
@@ -39,13 +39,13 @@ class PlansPage extends React.Component {
                             <Card.Header>Trica poderosa</Card.Header>
                             <Card.Meta>Incluye tres diciplinas</Card.Meta>
                             <Card.Description>
-                                <label class="ui header">Mes>TLD*</label> 
+                                <label className="ui header">Mes>TLD*</label> 
                                     270 bs / <label className="ui header">3VS*</label>
                                     175 bs<br />
                             </Card.Description>
                         </Card.Content>
                         <Card.Content extra>
-                        <a>
+                        <a href="">
                             <Icon name='check square' />
                             Consumo de agua libre, 1 merienda gratis a la semana.
                         </a>
@@ -57,13 +57,13 @@ class PlansPage extends React.Component {
                             <Card.Header>De a dos</Card.Header>
                             <Card.Meta>Incluye dos diciplinas</Card.Meta>
                             <Card.Description>
-                                <label class="ui header">Mes>TLD*</label> 
+                                <label className="ui header">Mes>TLD*</label> 
                                     255 bs / <label className="ui header">3VS*</label>
                                     160 bs<br />
                             </Card.Description>
                         </Card.Content>
                         <Card.Content extra>
-                        <a>
+                        <a href="">
                             <Icon name='check square' />
                             Consumo de agua libre
                         </a>
@@ -81,7 +81,7 @@ class PlansPage extends React.Component {
                             </Card.Description>
                         </Card.Content>
                         <Card.Content extra>
-                        <a>
+                        <a href="">
                             <Icon name='check square' />
                             Consumo de agua libre
                         </a>
@@ -94,3 +94,4 @@ class PlansPage extends React.Component {
 }
 
 export default PlansPage;
+

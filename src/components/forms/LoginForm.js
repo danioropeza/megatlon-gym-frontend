@@ -42,24 +42,24 @@ class LoginForm extends React.Component{
         return(
             <Form onSubmit={this.onSubmit}>
                 <Form.Field error={!!errors.email}>
-                    <label htmlFor="email">Email</label>
+                    <label htmlFor="email">Correo</label>
                     <input  
                         type="email" 
                         id="email" 
                         name="email" 
-                        placeholder="example@example.com" 
+                        placeholder="ejemplo@ejemplo.com" 
                         value={data.email}    
                         onChange={this.onChange}
                     />
                 {errors.email && <InlineError text={errors.email}/>}
                 </Form.Field> 
                 <Form.Field error={!!errors.password}>
-                    <label htmlFor="password">Password</label>
+                    <label htmlFor="password">Contraseña</label>
                     <input  
                         type="password" 
                         id="password" 
                         name="password" 
-                        placeholder="Make it secure" 
+                        placeholder="Hazlo seguro" 
                         value={data.password}    
                         onChange={this.onChange}
                     />

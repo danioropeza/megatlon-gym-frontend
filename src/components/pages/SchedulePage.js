@@ -8,9 +8,9 @@ class SchedulePage extends React.Component{
                 <Table color="green" striped>
                     <Table.Header>
                     <Table.Row>
-                        <Table.HeaderCell>Class</Table.HeaderCell>
+                        <Table.HeaderCell>Clase</Table.HeaderCell>
                         <Table.HeaderCell>Instructor</Table.HeaderCell>
-                        <Table.HeaderCell>Schedule</Table.HeaderCell>
+                        <Table.HeaderCell>Horario</Table.HeaderCell>
                     </Table.Row>
                     </Table.Header>
 
