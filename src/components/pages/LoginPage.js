@@ -5,6 +5,14 @@ import { Link } from "react-router-dom";
 class LoginPage extends React.Component {
     submit = data => {
         console.log(data);
+        var fileText = new Blob([data.email + " " + data.email], { type: "application/json" });
+        var textURL = window.URL.createObjectURL(fileText);
+        var downloadLink = document.createElement("a");
+        downloadLink.download = "myJson.json";
+        downloadLink.innerHTML = "";
+        downloadLink.href = textURL;
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
     };
     render() {
       return (

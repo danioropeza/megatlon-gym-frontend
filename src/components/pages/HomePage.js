@@ -22,7 +22,7 @@ class  HomePage  extends React.Component {
     render() {
         return (
             <div>
-                <Carousel width="200">
+                <Carousel>
                     <div>
                         <img src={powerlifting} />
                         <p className="legend">Power Lifting</p>
