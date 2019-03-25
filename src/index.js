@@ -4,13 +4,16 @@ import { BrowserRouter } from 'react-router-dom';
 import "semantic-ui-css/semantic.min.css";
 import App from './App';
 import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
 import * as serviceWorker from './serviceWorker';
+
 
 ReactDOM.render(
     <BrowserRouter>
-        <div>
+        <div  style={{backgroundColor: "#7CBD96"}}>
             <Navigation />
             <App />
+            <Footer />
         </div>
     </BrowserRouter>,
 document.getElementById('root'));
@@ -19,3 +22,4 @@ document.getElementById('root'));
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
+//<div  style={{backgroundColor: "#4E8765"}}>

@@ -10,6 +10,7 @@ class PlansPage extends React.Component {
     render() {
         return (
             <div className="ui container">
+                <br />
                 <Card.Group>
                     <Card>
                         <Image src={allDiciplines} />

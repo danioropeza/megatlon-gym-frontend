@@ -1,5 +1,5 @@
 import React from 'react'; 
-import { Grid, Image, Message, Menu } from 'semantic-ui-react';
+import { Grid, Image, Message, Menu, Icon } from 'semantic-ui-react';
 import megatlonImage from "../../images/megatlon.jpg";
 
 class AboutPage extends React.Component {
@@ -43,7 +43,7 @@ class AboutPage extends React.Component {
                 <Grid>
                     <Grid.Column>
                         <a href="https://www.google.com/search?rlz=1C1CHBF_esBO836BO836&q=megatlon+cochabamba&npsic=0&rflfq=1&rlha=0&rllag=-17390646,-66160655,658&tbm=lcl&ved=2ahUKEwiZ0dL5lZzhAhWFt1kKHSBgDosQtgN6BAgJEAQ&tbs=lrf:!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:2&rldoc=1#rlfi=hd:;si:13393331257202259214;mv:!1m2!1d-17.38366890526465!2d-66.1372490083013!2m2!1d-17.402036324203284!2d-66.17359815818781!4m2!1d-17.39285284528466!2d-66.15542358324456!5i16">
-                            Ver ubicacion
+                            <Icon name="map marker alternate"/>Ver ubicacion
                         </a>
                     </Grid.Column>
                 </Grid>

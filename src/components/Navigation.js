@@ -4,9 +4,9 @@ import { Icon } from 'semantic-ui-react';
 import "semantic-ui-css/semantic.min.css";
 
 const Navigation = () => (
-    <div className="ui centered grid" >
+    <div className="ui centered grid">
         <div className="center aligned column">
-            <div className="ui compact menu">
+            <div className="ui inverted menu">
                 <Link className="item" to="/"><Icon name="home" /> Home </Link>
                 <Link className="item" to="/login" ><Icon name="sign in alternate" /> Login </Link>
                 <Link className="item" to="/register" ><Icon name="edit" /> Registro </Link>
@@ -17,5 +17,4 @@ const Navigation = () => (
         </div>
     </div>
 )
-
 export default Navigation;

@@ -18,7 +18,6 @@ import machines from "../../images/kranking.jpg";
 
 
 
-
 class  HomePage  extends React.Component {
     render() {
         return (

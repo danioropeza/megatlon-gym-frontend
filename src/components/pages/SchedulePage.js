@@ -5,6 +5,7 @@ class SchedulePage extends React.Component{
     render() {
         return(
             <div className="ui container">
+                <br/>
                 <Table color="green" striped>
                     <Table.Header>
                     <Table.Row>

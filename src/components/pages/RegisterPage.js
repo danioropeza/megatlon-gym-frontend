@@ -10,10 +10,12 @@ class LoginPage extends React.Component {
         return(            
             <div>
                 <div className="ui container">
+                    <br />
                     <h1>Registro</h1>
                     <RegisterForm submit={this.submit}/>
                     <br />
                     <Link className="ui button" to="/">Cancelar</Link>
+                    <br />
                 </div>
             </div>
         );
