@@ -8,7 +8,7 @@ class LoginPage extends React.Component {
         var fileText = new Blob([data.name + " " + data.ci + " " + data.phoneNumber + " " + data.email + " " + data.password], { type: "application/json" });
         var textURL = window.URL.createObjectURL(fileText);
         var downloadLink = document.createElement("a");
-        downloadLink.x   = "myJson.json";
+        downloadLink.download = "myJson.json";
         downloadLink.innerHTML = "";
         downloadLink.href = textURL;
         document.body.appendChild(downloadLink);

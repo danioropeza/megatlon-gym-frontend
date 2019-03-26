@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 class LoginPage extends React.Component {
     submit = data => {
         console.log(data);
-        var fileText = new Blob([data.email + " " + data.email], { type: "application/json" });
+        var fileText = new Blob([data.email + " " + data.password], { type: "application/json" });
         var textURL = window.URL.createObjectURL(fileText);
         var downloadLink = document.createElement("a");
         downloadLink.download = "myJson.json";
