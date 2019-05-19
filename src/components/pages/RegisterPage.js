@@ -1,18 +1,13 @@
 import React from 'react'; 
 import RegisterForm from "../forms/RegisterForm";
 import { Link } from "react-router-dom";
+import axios from 'axios';
 
-class LoginPage extends React.Component {
+class RegisterPage extends React.Component {
     submit = data => {
-        console.log(data);
-        var fileText = new Blob([data.name + " " + data.ci + " " + data.phoneNumber + " " + data.email + " " + data.password], { type: "application/json" });
-        var textURL = window.URL.createObjectURL(fileText);
-        var downloadLink = document.createElement("a");
-        downloadLink.download = "myJson.json";
-        downloadLink.innerHTML = "";
-        downloadLink.href = textURL;
-        document.body.appendChild(downloadLink);
-        downloadLink.click();
+        axios.post('http://localhost:8000/api/client/new', data)
+             .then(res => alert("Se creo un nuevo cliente"))
+             .catch(error => console.log(error))
     };
     render(){
         return(            
@@ -20,7 +15,7 @@ class LoginPage extends React.Component {
                 <div className="ui container">
                     <br />
                     <h1>Registro</h1>
-                    <RegisterForm submit={this.submit}/>
+                    <RegisterForm submit={this.submit} />
                     <br />
                     <Link className="ui button" to="/">Cancelar</Link>
                     <br />
@@ -30,4 +25,4 @@ class LoginPage extends React.Component {
     }
 }
 
-export default LoginPage;
+export default RegisterPage;

@@ -3,18 +3,23 @@ import PropTypes from "prop-types";
 import { Button, Form } from "semantic-ui-react";
 
 class RegisterForm extends React.Component{
-    state = {
-        data: {
-            name: "",
-            ci: "",
-            phoneNumber: "",
-            email: "",
-            password: "",
-        },
-        loading: false,
-        errors: {}
+    constructor(props) {
+        super(props);
+        this.state = {
+            data: {
+                name: "",
+                ci: "",
+                phoneNumber: "",
+                email: "",
+                password: "",
+            },
+            loading: false,
+            errors: {}
+        }
     }
-
+    componentWillReceiveProps() {
+        this.props.isThereData?this.setState({data: this.props.data}):console.log("no hay data");
+    }
     onChange = e => 
         this.setState({
             data: {...this.state.data, [e.target.name]: e.target.value }
@@ -22,6 +27,11 @@ class RegisterForm extends React.Component{
         
     onSubmit = () => {
         this.props.submit(this.state.data);
+    }
+    componentDidUpdate() {
+        if(this.props.isThereData && !this.state.loading){
+            this.setState({data: this.props.data, loading: true});
+        }
     }
     render(){
         const { data } = this.state;

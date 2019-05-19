@@ -13,6 +13,7 @@ const Navigation = () => (
                 <Link className="item" to="/plans" ><Icon name="clipboard list" /> Planes </Link>
                 <Link className="item" to="/schedule" ><Icon name="calendar alternate" /> Horarios </Link>
                 <Link className="item" to="/about" ><Icon name="question circle outline" /> Acerca de </Link>
+                <Link className="item" to="/clientAccountAdministration" ><Icon name="question circle outline" /> ACC </Link>
             </div>
         </div>
     </div>

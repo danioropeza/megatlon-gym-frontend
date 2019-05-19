@@ -24,51 +24,51 @@ class  HomePage  extends React.Component {
             <div>
                 <Carousel>
                     <div>
-                        <img src={powerlifting} />
+                        <img src={powerlifting} alt=""/>
                         <p className="legend">Power Lifting</p>
                     </div>
                     <div>
-                        <img src={trx} />
+                        <img src={trx} alt=""/>
                         <p className="legend">TRX</p>
                     </div>
                     <div>
-                        <img src={kranking} />
+                        <img src={kranking} alt=""/>
                         <p className="legend">Kranking</p>
                     </div>
                     <div>
-                        <img src={zumba} />
+                        <img src={zumba} alt=""/>
                         <p className="legend">Zumba</p>
                     </div>
                     <div>
-                        <img src={core360} />
+                        <img src={core360} alt=""/>
                         <p className="legend">Core 360</p>
                     </div>
                     <div>
-                        <img src={spinning} />
+                        <img src={spinning} alt=""/>
                         <p className="legend">Spinning</p>
                     </div>
                     <div>
-                        <img src={bodycombat} />
+                        <img src={bodycombat} alt=""/>
                         <p className="legend">Body Combat</p>
                     </div>
                     <div>
-                        <img src={strongzumba} />
+                        <img src={strongzumba} alt=""/>
                         <p className="legend">Strong Zumba</p>
                     </div>
                     <div>
-                        <img src={powerjump} />
+                        <img src={powerjump} alt=""/>
                         <p className="legend">Power Jump</p>
                     </div>
                     <div>
-                        <img src={cardio} />
+                        <img src={cardio} alt=""/>
                         <p className="legend">Cardio</p>
                     </div>
                     <div>
-                        <img src={bodyattack} />
+                        <img src={bodyattack} alt=""/>
                         <p className="legend">Body Attack</p>
                     </div>
                     <div>
-                        <img src={machines} />
+                        <img src={machines} alt=""/>
                         <p className="legend">Machines</p>
                     </div>
                 </Carousel>
